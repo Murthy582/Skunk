@@ -92,7 +92,7 @@ function getRecords(callback) {
 				Contacts.dataObject = Contacts.findRecordById([this.id]);
 			 	$j.mobile.loading( "show", { text: 'Loading', textVisible: true } );
                 $j('#FirstName').html(Contacts.dataObject.FirstName);
-				$j('#LastName').html(Contacts.dataObject.LastName);
+		$j('#RName').html(Contacts.dataObject.FirstName);
                 $j('#Email').html(Contacts.dataObject.Email);
                 $j('#Id').val(Contacts.dataObject.Id);
                 $j.mobile.loading("hide");
