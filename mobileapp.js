@@ -64,8 +64,8 @@ function addClickListeners() {
         e.preventDefault();
         $j.mobile.loading( "show", { text: 'Loading', textVisible: true } );
 		
-		$j('input#FirstName').val(Contacts.dataObject.FirstName);
-		$j('input#LastName').val(Contacts.dataObject.LastName);
+		$j('input#FName').val(Contacts.dataObject.FirstName);
+		$j('input#LName').val(Contacts.dataObject.LastName);
         $j('input#Email').val(Contacts.dataObject.Email);
         $j('input#Id').val(Contacts.dataObject.Id);
 		
