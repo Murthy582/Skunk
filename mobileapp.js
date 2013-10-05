@@ -42,7 +42,7 @@ function addClickListeners() {
         // Show the 'New Account' form
         e.preventDefault();
         $j('#form')[0].reset();
-        $j('#formheader').html('New Contact');
+        $j('#formheader').html('New Request');
         setButtonText('#actionbtn', 'Create');
 		Contacts.dataObject = null;
         $j.mobile.changePage( "#editpage" , { reverse: false, changeHash: false } );
@@ -69,7 +69,7 @@ function addClickListeners() {
         $j('input#Email').val(Contacts.dataObject.Email);
         $j('input#Id').val(Contacts.dataObject.Id);
 		
-        $j('#formheader').html('Edit Contact');
+        $j('#formheader').html('Edit Request');
         setButtonText('#actionbtn', 'Update');
         $j.mobile.loading( "hide");
         $j.mobile.changePage( "#editpage" , { reverse: false, changeHash: false } );
