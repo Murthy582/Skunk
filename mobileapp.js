@@ -120,7 +120,7 @@ function syncHandler(e) {
 	var record = Contacts.create();
 	if(Contacts.dataObject != null) { record = Contacts.dataObject; } 
 	record.FirstName = $j('input#FirstName').val();
-	record.LastName = $j('input#LastName').val();
+	record.LastName = $j('input#FirstName').val();
 	record.Email = $j('input#Email').val();
 	
 	console.log('record created::::');
