@@ -172,15 +172,9 @@ function sessionCallback(oauthResponse) {
                         <form name="contact" id="form">
                             <input type="hidden" name="Id" id="Id" />
                             <table>
-                                <tr><td>First Name:</td><td ><input name="FirstName" id="FirstName"
-                                                                                  data-theme="c"/></td></tr>
-                                            <tr><td>Last Name:</td><td ><input name="LastName" id="LastName"
-                                                                                                  data-theme="c"/></td></tr>
-                                                                                <tr>
-                                                                                                <td>Email:</td>
-                                                                                                <td><input name="Email" id="Email"
-                                                                                                  data-theme="c"/></td>
-                                                                                </tr>
+                                <tr><td>First Name:</td><td ><input name="FirstName" id="FirstName" data-theme="c"/></td></tr>
+                                <tr><td>Last Name:</td><td ><input name="LastName" id="LastName" data-theme="c"/></td></tr>
+                                <tr><td>Email:</td><td><input name="Email" id="Email" data-theme="c"/></td></tr>
                             </table>
                             <button data-role="button" id="actionbtn">Action</button>
                         </form>
