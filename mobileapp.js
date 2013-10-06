@@ -31,6 +31,7 @@
   */
 
 var Contacts = new SObjectData();
+var Requests = new SobjectData('Sales_Request__c');
 function errorCallback(jqXHR){
     console.log(jqXHR.statusText + ": " + jqXHR.responseText);
 }
@@ -80,20 +81,20 @@ function addClickListeners() {
 function getRecords(callback) {
 	console.log('In getRecords');
     $j('#list').empty();
-    Contacts.fetch("soql","SELECT Id, FirstName, LastName, Email FROM Contact ORDER BY Name LIMIT 20",
+    Contacts.fetch("soql","SELECT Id, Request_Status__c, Account__c, Name FROM Sales_Request__c",
     function() {
 		$j.each(Contacts.data(),
         function() {
             var id = this.Id;
             var newLi = $j('<li></li>');
-			var newLink = $j('<a id="' +this.Id+ '" data-transition="flip">' +this.FirstName+ ' '+this.LastName+ '</a>')
+			var newLink = $j('<a id="' +this.Id+ '" data-transition="flip">' +this.Name+ '</a>')
 			.click(function(e) {
                 e.preventDefault();
 				Contacts.dataObject = Contacts.findRecordById([this.id]);
 			 	$j.mobile.loading( "show", { text: 'Loading', textVisible: true } );
-                $j('#FirstName').html(Contacts.dataObject.FirstName);
-		$j('#RName').html(Contacts.dataObject.FirstName);
-                $j('#Email').html(Contacts.dataObject.Email);
+                $j('#FirstName').html(Contacts.dataObject.Name);
+		$j('#LastName').html(Contacts.dataObject.Request_Status__c);
+                $j('#Email').html(Contacts.dataObject.Account__c);
                 $j('#Id').val(Contacts.dataObject.Id);
                 $j.mobile.loading("hide");
                 $j.mobile.changePage( "#detailpage" , { reverse: false, changeHash: true } );
