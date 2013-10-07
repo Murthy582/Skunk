@@ -168,7 +168,7 @@ function sessionCallback(oauthResponse) {
                     <a href='#mainpage' id="back" class='ui-btn-left' data-icon='arrow-l'>Back</a>
                                 <h1 id="formheader">New Contact</h1>
                     </div>
-                    <div data-role="content">
+                    <div data-role="content" data-mini="true">
                         <form name="contact" id="form">
                             <input type="hidden" name="Id" id="Id" />
                             <table>
