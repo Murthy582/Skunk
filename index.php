@@ -180,16 +180,26 @@ function sessionCallback(oauthResponse) {
                                 <tr><td>Aging Bucket:</td><td><input type="checkbox" name="AgingBucket" id="AgingBucket" data-theme="c"/></td></tr>
                                 <tr><td>Renewal Plan:</td><td><input type="checkbox" name="RenewalPlan" id="RenewalPlan" data-theme="c"/></td></tr>
                             </table>
+                            
+                            <div data-role="fieldcontain">
+ 	                   	<fieldset data-role="controlgroup">
+		                   <legend>Agree to the terms:</legend>
+		                   <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+		                   <label for="checkbox-1">Cases By Month</label>
+		                   <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+		                   <label for="checkbox-1">Cases By Product Line:</label>
+		                   <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
+		                   <label for="checkbox-1">Aging Bucket</label>
+		                   <input type="checkbox" name="checkbox-4" id="checkbox-4" class="custom" />
+		                   <label for="checkbox-1">Renewal Plan</label>
+		          	</fieldset>
+                    	    </div>
+                            
+                            
                             <button data-role="button" id="actionbtn">Action</button>
                         </form>
                     </div>
-                     <div data-role="fieldcontain">
- 	                   <fieldset data-role="controlgroup">
-		                   <legend>Agree to the terms:</legend>
-		                   <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
-		                   <label for="checkbox-1">I agree</label>
-                    </fieldset>
-                    </div>
+                     
                     <div data-role="footer">
                         <h4>Force.com</h4>
                     </div>
