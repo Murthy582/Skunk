@@ -187,11 +187,11 @@ function sessionCallback(oauthResponse) {
 		                   <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
 		                   <label for="checkbox-1">Cases By Month</label>
 		                   <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
-		                   <label for="checkbox-1">Cases By Product Line:</label>
+		                   <label for="checkbox-2">Cases By Product Line:</label>
 		                   <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
-		                   <label for="checkbox-1">Aging Bucket</label>
+		                   <label for="checkbox-3">Aging Bucket</label>
 		                   <input type="checkbox" name="checkbox-4" id="checkbox-4" class="custom" />
-		                   <label for="checkbox-1">Renewal Plan</label>
+		                   <label for="checkbox-4">Renewal Plan</label>
 		          	</fieldset>
                     	    </div>
                             
