@@ -30,7 +30,7 @@ an HTML5 mobile app using jQuery Mobile
 -->
 <html>
 <head>
-<title>Contacts</title>
+<title>Sales Request</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <!--
@@ -174,11 +174,6 @@ function sessionCallback(oauthResponse) {
                             <table>
                                 <tr><td>Request Name:</td><td ><input name="Request Name" id="RequestName" data-theme="c"/></td></tr>
                                 <tr><td>Request Status:</td><td ><input name="Status" id="Status" data-theme="c"/></td></tr>
-                                <tr><td>Report:</td><td><input name="Report" id="Report" data-theme="c"/></td></tr>
-                                <tr><td>Cases By Month:</td><td><input type="checkbox" name="CasesByMonth" id="CasesByMonth" data-theme="c"/></td></tr>
-                                <tr><td>Cases By Product Line:</td><td><input type="checkbox" name="CasesByPL" id="CasesByPL" data-theme="c"/></td></tr>
-                                <tr><td>Aging Bucket:</td><td><input type="checkbox" name="AgingBucket" id="AgingBucket" data-theme="c"/></td></tr>
-                                <tr><td>Renewal Plan:</td><td><input type="checkbox" name="RenewalPlan" id="RenewalPlan" data-theme="c"/></td></tr>
                             </table>
                             
                             <div data-role="fieldcontain">
